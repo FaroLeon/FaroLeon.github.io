@@ -29,8 +29,11 @@
 <main id="rin-main">
     <div id="rin-headimg"></div>
     <div class="rin-name">留&nbsp;&nbsp;恋&nbsp;&nbsp;幻&nbsp;&nbsp;梦</div>
-   <div class="rin-description">「强忍着泪水笑着说再见 | 让我们永远在梦中相会吧」</div>
-	<div class="rin-description">「在永恒的宅邸拉莱耶中,长眠的克苏鲁侯汝入梦」</div>
+  <div class="rin-description">「强忍着泪水笑着说再见 | 让我们永远在梦中相会吧」</div>
+	
+            <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://www.bilibili.com/read/readlist/rl330029/"><span class="iconfont iconBlog">美好知识的传送入口</span> </a>
+	    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://tv.cctv.com/live/cctvchild"><span class="iconfont iconBlog">少女表演/懂得都懂</span> </a>
+<div class="rin-description">「在永恒的宅邸拉莱耶中,长眠的克苏鲁侯汝入梦」</div>
     <div class="rin-tr"></div>
     <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://figerous.github.io/"><span class="iconfont iconBlog"></span> More</a>
 </main>
